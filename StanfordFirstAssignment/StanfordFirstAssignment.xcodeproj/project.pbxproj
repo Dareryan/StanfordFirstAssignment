@@ -21,6 +21,10 @@
 		45CC8F6718847B9500A3F012 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45CC8F4918847B9500A3F012 /* UIKit.framework */; };
 		45CC8F6F18847B9500A3F012 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45CC8F6D18847B9500A3F012 /* InfoPlist.strings */; };
 		45CC8F7118847B9500A3F012 /* StanfordFirstAssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CC8F7018847B9500A3F012 /* StanfordFirstAssignmentTests.m */; };
+		45CC8F7C18847D3B00A3F012 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CC8F7B18847D3B00A3F012 /* Card.m */; };
+		45CC8F7F1884849A00A3F012 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CC8F7E1884849A00A3F012 /* Deck.m */; };
+		45CC8F8218848A2600A3F012 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CC8F8118848A2600A3F012 /* PlayingCard.m */; };
+		45CC8F851884926D00A3F012 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CC8F841884926D00A3F012 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		45CC8F6C18847B9500A3F012 /* StanfordFirstAssignmentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StanfordFirstAssignmentTests-Info.plist"; sourceTree = "<group>"; };
 		45CC8F6E18847B9500A3F012 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45CC8F7018847B9500A3F012 /* StanfordFirstAssignmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StanfordFirstAssignmentTests.m; sourceTree = "<group>"; };
+		45CC8F7A18847D3B00A3F012 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		45CC8F7B18847D3B00A3F012 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		45CC8F7D1884849A00A3F012 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		45CC8F7E1884849A00A3F012 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		45CC8F8018848A2600A3F012 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		45CC8F8118848A2600A3F012 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		45CC8F831884926D00A3F012 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		45CC8F841884926D00A3F012 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +127,18 @@
 				45CC8F5418847B9500A3F012 /* AppDelegate.h */,
 				45CC8F5518847B9500A3F012 /* AppDelegate.m */,
 				45CC8F5718847B9500A3F012 /* Main.storyboard */,
-				45CC8F5A18847B9500A3F012 /* ViewController.h */,
-				45CC8F5B18847B9500A3F012 /* ViewController.m */,
 				45CC8F5D18847B9500A3F012 /* Images.xcassets */,
 				45CC8F4C18847B9500A3F012 /* Supporting Files */,
+				45CC8F7A18847D3B00A3F012 /* Card.h */,
+				45CC8F7B18847D3B00A3F012 /* Card.m */,
+				45CC8F7D1884849A00A3F012 /* Deck.h */,
+				45CC8F7E1884849A00A3F012 /* Deck.m */,
+				45CC8F5A18847B9500A3F012 /* ViewController.h */,
+				45CC8F5B18847B9500A3F012 /* ViewController.m */,
+				45CC8F8018848A2600A3F012 /* PlayingCard.h */,
+				45CC8F8118848A2600A3F012 /* PlayingCard.m */,
+				45CC8F831884926D00A3F012 /* PlayingCardDeck.h */,
+				45CC8F841884926D00A3F012 /* PlayingCardDeck.m */,
 			);
 			path = StanfordFirstAssignment;
 			sourceTree = "<group>";
@@ -249,9 +269,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45CC8F8218848A2600A3F012 /* PlayingCard.m in Sources */,
+				45CC8F7F1884849A00A3F012 /* Deck.m in Sources */,
 				45CC8F5C18847B9500A3F012 /* ViewController.m in Sources */,
 				45CC8F5618847B9500A3F012 /* AppDelegate.m in Sources */,
+				45CC8F851884926D00A3F012 /* PlayingCardDeck.m in Sources */,
 				45CC8F5218847B9500A3F012 /* main.m in Sources */,
+				45CC8F7C18847D3B00A3F012 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
